@@ -1,27 +1,54 @@
 <!DOCTYPE html>
-<!-- <html>
-  <head>
-    <title><%= title %></title>
-
-   <!-- Latest compiled and minified CSS -->
-<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel='stylesheet' href='/stylesheets/style.css' /> -->
-<!--   </head>
-  <body>
-    <h1><%= title %></h1>
-    <h2>Hello</h2>
-    <p>Welcome to <%= title %></p>
-    <a class = "btn btn_primary" href ="indext">Design your own tshirt</a>
-    <a class = "btn btn_primary" href ="try">TRY</a>
-  </body>
-</html> --> 
-
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Product</title>
-  <style>
-    .row.display-flex {
+  <head>
+    <title>CHINO</title>
+    <style type="text/css">
+     body
+      {
+       
+        background-image: url('https://mymlachi.com/wp-content/uploads/2017/04/pexels-photo-94736.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 100%;
+      
+      } 
+      .main
+      {
+        width:100%;
+        margin-let:0px;
+      }
+      
+      .p
+      {
+        font-size: 120px;
+      }
+      .b {
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+}
+background-img {
+    opacity: 1;
+    filter: alpha(opacity=50); 
+}
+.qu
+{
+  font-size:20px;
+}
+.r
+{
+  font-size:15px;
+}
+      
+      .grow
+       { transition: all .2s ease-in-out; }
+.grow:hover 
+{ transform: scale(1.1); }
+
+
+ .row.display-flex {
   display: flex;
   flex-wrap: wrap;
 }
@@ -29,153 +56,82 @@
   height: 100%;
   text-align: center;
 }
-</style>
+nav
+{
+    background-color: #402A2A;
+    margin-bottom: 0!important;
+    height: 10%;
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+}
+
+.navbar-static-top .navbar-brand,
+.navbar-static-top .navbar-brand:hover,
+.navbar-static-top .navbar-brand:focus {
+    color: #FFF;
+}
+
+.navbar-static-top .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-static-top .navbar-nav > li > a:hover,
+.navbar-static-top .navbar-nav > li > a:focus {
+    background-color: #7F5454;
+}
+
+.navbar-static-top .navbar-nav > .active > a,
+.navbar-static-top .navbar-nav > .active > a:hover,
+.navbar-static-top .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: #7F5454;
+}
+.q
+{
+  font-size:40px;
+}
+    </style>
+  
+      
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="css/thumbnail-gallery.css" rel="stylesheet">
-}
-}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-</head>
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
- <div class="container">
-  <div class="navbar-header">
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-  </button>
-    <a class="navbar-brand" href="#" style="color: white">िचनाे</a>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".slide-toggle").click(function(){
+            $(".box").slideUp();
+        });
+    });
+</script>
+  </head>
+
+
+  <body>
+  <div class="box">
+  <center>
+  <br><br>
+  <img src="/images/chinofinal.png" width="300" height="200">
+  <br><br><br>
+  <font face="Lucida Calligraphy" color="white" ><div class="qu">Materialize your Memories<br></div>
+  <br>
+  <font face="Lucida Calligraphy" color="white" ><div class="qu">"LIFE is a great big CANVAS, throw all the PAINT you can on IT.<br>
+  DESIGN the way YOU want."<b></div>
+  <br><br><br>
+  <div class='r'>
+  <p>CLICK TO CONTINUE<br>
+  <div class="grow"><a href="home"><img src="/images/aa.png"
+
+  width="60" height="60" border="2" class="b" /></a></div>
+  </font>
+  </center>
   </div>
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                 <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                     <li>
-                        <a href="indext">Design Yourself</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact us</a>
-                    </li>
-                </ul>
-</div>
-</nav>
-<!-- Page Content -->
-    <div class="container">
+  
 
-        <div class="row">
+ 
 
-            <div class="col-lg-12">
-                <h1 class="page-header">Our designs</h1>
-            </div>
-           </div>
-
-            <div class="row display-flex">
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMwIFgQ6FtgD4m8P8WkeJrEc_UxW7IlnY7oglm-FWSNqOpxuOz">
-            <div class="caption">
-              <h4>Devil</h4>
-            <p>Rs.1000</p>
-            </div>
-                </a>
-             </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIUDMPwGJ3wUfMmRTqCMRkvSbleEsET85P6M0OIw_lRV7FMsJ1" alt="">
-                    <div class="caption">
-                      <h4>Love Apple</h4>
-                <p>Rs.1000</p>
-                    </div>
-                </a>
-             </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://c1.staticflickr.com/4/3507/4075738698_cc6aaf0648.jpg" alt="">
-                    <div class="caption">
-                      <h4>Heart</h4>
-                <p>Rs.1000</p>
-                    </div>
-                </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmb2OI59QhLJvX75TOVvxVoVxBbSlSmWq7NizwWQYkM2cU38CC" alt="">
-                    <div class="caption">
-                      <h4>Cartoon</h4>
-                <p>Rs.1000</p>
-                    </div>
-              </a>
-            </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYf1tKd_rxNB2tziEpOboWJXIJpVFlBzLQKrAf0KgnKOfIY08k" alt="">
-                    <div class="caption">
-                      <h4>Plain</h4>
-                <p>Rs.1000</p>
-                    </div>
-                </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/T-Shirt_mind_the_gap.jpg" alt="">
-                    <div class="caption">
-                      <h4>Black</h4>
-                <p>Rs.1000</p>
-                    </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>               
-                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://i.walmart.com/i/p/00/76/12/53/39/0076125339600_215X215.jpg" alt="">
-                    <div class="caption">
-                     <h4>Blue</h4>
-                 <p>Rs.1000</p>
-                    </div>
-                </a>
-                </div>
-
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div>
-              <a class="thumbnail" href="#">
-                    <img class="img-responsive mx-auto d-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFGbtLhejFFTpDEJOCJ6ScTzf3mPwDx4QVRFUbgv38gYVDD0CDw" alt="">
-                    <div class="caption">
-                      <h4>Black</h4>
-                <p>Rs.1000</p>
-                    </div>
-                </a>
-                </div>
-            </div>
-
-    </div>
-  </div>
-</body>
+  </body>
+ 
 </html>

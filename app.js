@@ -4,9 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var multer = require('multer');
 var index = require('./routes/index');
 var users = require('./routes/users');
+var reqProduct = require('./routes/reqProduct');
+var feedbackform = require('./routes/feedbackform');
 
 var mongoose = require('mongoose');
 
@@ -16,7 +18,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-mongoose.createConnection('mongodb://localhost/chino_db');
+mongoose.connect('mongodb://localhost/chino_db');
 var db = mongoose.collection;
 
 // uncomment after placing your favicon in /public
@@ -29,6 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/reqProduct', reqProduct);
+app.use('/feedbackform', feedbackform);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -7,6 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,6 +20,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>	
 	<script type="text/javascript" src="/javascripts/fabric.js"></script>
 	<script type="text/javascript" src="/javascripts/tshirtEditor.js"></script>
@@ -29,11 +35,64 @@
 	 <script type="text/javascript">
 	 </script>
 	 <style type="text/css">
+
+.div1 {
+    width: 300px;
+    height: 575px;
+    border: 1px;
+}
+
+body{
+    background-color: #fffafa!important;;
+}
+	 	    .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbnail {
+  height: 100%;
+  text-align: center;
+}
+nav
+{
+    background-color: #402A2A;
+    margin-bottom: 0!important;
+    height: 10%;
+
+}
+
+.navbar-static-top .navbar-brand,
+.navbar-static-top .navbar-brand:hover,
+.navbar-static-top .navbar-brand:focus {
+    color: #FFF;
+}
+
+.navbar-static-top .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-static-top .navbar-nav > li > a:hover,
+.navbar-static-top .navbar-nav > li > a:focus {
+    background-color: #7F5454;
+}
+
+.navbar-static-top .navbar-nav > .active > a,
+.navbar-static-top .navbar-nav > .active > a:hover,
+.navbar-static-top .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: #7F5454;
+}
+.q
+{
+  font-size:40px;
+}
+
+
 		 .footer {
-			padding: 70px 0;
+			padding: 50px 0;
 			margin-top: 70px;
 			border-top: 1px solid #E5E5E5;
-			background-color: whiteSmoke;
+			background-color: #7F5454;
 			}			
 	      body {
 	        padding-top: 60px;	        
@@ -76,8 +135,71 @@
 
   <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
 
+  <nav class="navbar navbar-fixed-top" role="navigation">
+ <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+    </button>
+        <a class="navbar-brand" href="#" style="color: white; margin-bottom:5px"><img src="/images/chinofinal.png" width="90" height="40"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left:50%">
+                <ul class="nav navbar-nav">
+                 <li>
+                        <a href="home" style="color:white">Home</a>
+                    </li>
+                    <li>
+                        <a href="about" style="color:white">About us</a>
+                    </li>
+                     <li>
+                        <a href="indext" style="color:white">Design Yourself</a>
+                    </li>
+                    <li>
+                        <a href="product" style="color:white">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact" style="color:white">Contact us</a>
+                    </li>
+                </ul>
+    </div>
+</nav>
 
- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  	<!-- <nav class="navbar navbar-fixed-top" role="navigation">
+ <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+    </button>
+       <a class="navbar-brand" href="#" style="color: white; margin-bottom:0px"><img src="/images/chinofinal.png" width="80" height="30"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left:50%">
+                <ul class="nav navbar-nav">
+                 <li>
+                        <a href="home" style="color:white">Home</a>
+                    </li>
+                    <li>
+                        <a href="about" style="color:white">About us</a>
+                    </li>
+                     <li>
+                        <a href="indext" style="color:white">Design Yourself</a>
+                    </li>
+                    <li>
+                        <a href="product" style="color:white">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact" style="color:white">Contact us</a>
+                    </li>
+                </ul>
+    </div>
+</nav> -->
+
+ <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
  <div class="container">
   <div class="navbar-header">
   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
@@ -103,34 +225,19 @@
                         <a href="#">Products</a>
                     </li>
                     <li>
-                        <a href="#">Contact us</a>
+                        <a href="contact">Contact us</a>
                     </li>
                 </ul>
 </div>
-</nav>
+</nav> -->
   
 
 
-  <!-- Navbar
-    ================================================== -->
- <!-- <div class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
-   <div class="navbar-inner">
-     <div class="container">
-       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-       </a>
-       <a class="brand" href="#">Custom T-Shirt</a>
-    
-     </div>
-   </div>
- </div>
- -->
     <div class="container">
 		<section id="typography">
 		  <div class="page-header">
-		    <h1>Design your own T-shirt</h1>
+		    <h1 style="color: #7F5454">Design your own T-shirt</h1>
+		    <h3 style="color: #800000"><p><i>"Unleash your creativity. Design the way you want"</i></p><h3>
 		  </div>
 		
 		  <!-- Headings & Paragraph Copy -->
@@ -139,9 +246,9 @@
 		    	
 		    	<div class="tabbable"> <!-- Only required for left/right tabs -->
 				  <ul class="nav nav-tabs">
-				  <li class= "active"><a>Select T-shirt options</a></li>
-				  	<!-- <li><a href="#tab1" data-toggle="tab">Color</a></li>				    
-				    <li class="active"><a href="#tab2" data-toggle="tab">Images and Text</a></li> -->
+				  <li class= "active" style="color: black"><a  href="#tab1" data-toggle="tab">Select T-shirt options</a></li>
+				  	<!-- <li><a href="#tab1" data-toggle="tab">Color</a></li>	 -->			    
+				    <li><a href="#tab2" data-toggle="tab">Cliparts</a></li>
 				  </ul>
 				  <div class="tab-content">
 				     <div class="tab-pane active" id="tab1">
@@ -159,8 +266,8 @@
 					      <div class="well">
 							<ul>
 								<li class="color-preview" title="White" style="background-color:#ffffff;"></li>
-								<li class="color-preview" title="Dark Heather" style="background-color:#616161;"></li>
-								<li class="color-preview" title="Gray" style="background-color:#f0f0f0;"></li>
+								<!-- <li class="color-preview" title="Dark Heather" style="background-color:#616161;"></li> -->
+								<!-- <li class="color-preview" title="Gray" style="background-color:#f0f0f0;"></li> -->
 								<li class="color-preview" title="Charcoal" style="background-color:#5b5b5b;"></li>
 								<li class="color-preview" title="Black" style="background-color:#222222;"></li>
 								<!-- <li class="color-preview" title="Heather Orange" style="background-color:#fc8d74;"></li>
@@ -180,17 +287,27 @@
 								<li class="color-preview" title="Heather Navy" style="background-color:#3469b7;"></li>							
 								<li class="color-preview" title="Cherry Red" style="background-color:#c50404;"></li>
 							</ul>
-						</div>			      
+						</div>	
+						 <div class="input-append">
+							  <input class="span2 form-control input-lg" id="text-string" type="text" placeholder="Text to be inserted">
+
+							  <button id="add-text" class="btn btn-link"" title="Add text"><i class="icon-share-alt"></i></button>
+							  <hr>
+							</div> 	      
 				     </div>				   
 				    <div class="tab-pane active" id="tab2">
 				    	<div class="well">
-				    		<div class="input-append">
-							  <input class="span2" id="text-string" type="text" placeholder="Text to be inserted"><button id="add-text" class="btn" title="Add text"><i class="icon-share-alt"></i></button>
-							  <hr>
-							</div>
+				    		
 							<div id="avatarlist">
-								<img style="cursor:pointer;" class="img-polaroid" src="/images/invisibleman.jpg">
-								<img style="cursor:pointer;" class="img-polaroid" src="/images/music-headphones.png">
+								<!-- <img style="cursor:pointer;" class="img-polaroid" src="/images/invisibleman.jpg"> -->
+					
+								<img style="cursor:pointer;" class="img-polaroid" src="/images/pikachu.png">
+								<img style="cursor:pointer;" class="img-polaroid" src="/images/harry-potter.png">
+								<img style="cursor:pointer;" class="img-polaroid" src="/images/horse.png">
+								<img style="cursor:pointer;" class="img-polaroid" src="/images/sorting-hat.png">
+								<img style="cursor:pointer;" class="img-polaroid" src="/images/smile.png">
+								<img style="cursor:pointer;" class="img-polaroid" src="/images/music-headphones.png"
+								>
 				              
 							</div>				    		
 				    	</div>				      
@@ -259,37 +376,119 @@
 		    </div>
 		
 		    <div class="col-lg-3">
-		      <div>
-		      	<h3>Options</h3>
-			      <p>
-			      	<table class="table">
-			      		<tr>
-			      			<td>Size</td>
-			      			<td align="right">Large</td>
-			      		</tr>
-			      		<tr>
-			      			<td>Quantity</td>
-			      			<td align="right">5</td>
-			      		</tr>
-			      		
-			      		<tr>
-			      			<td><strong>Total</strong></td>
-			      			<td align="right"><strong>Rs. 5000</strong></td>
-			      		</tr>
-			      	</table>			
-			      </p>
-					<button type="button" onclick= "downloadFabric(tcanvas,name)" class="btn btn-large btn-block btn-success" name="addToTheBag" id="addToTheBag">Add to cart <i class="icon-briefcase icon-white"></i></button>
-		      </div>		      		       		   
+		    <table class="table">
+		    <tr class="active">
+		    	<th>Price per unit:</th>
+		    	<th>Rs. 1000</th>
+		    </tr>
+		    </table>
+		    <div class="div1">	
+		    <div class="panel panel-default">
+		      <div class="panel-heading">Options</div>
+		      <div class="panel-body">
+
+
+	<form action="reqProduct/insert" enctype="multipart/form-data" method="post" onsubmit="return confirm('Are you sure you have got everything right?');">
+	
+    <div class="form-group">
+      <strong>Size:<br></strong>
+				<label class="radio-inline">
+			      <input type="radio" name="product_size">S
+			    </label>
+			    <label class="radio-inline">
+			      <input type="radio" name="product_size">M
+			    </label>
+			    <label class="radio-inline">
+			      <input type="radio" name="product_size">L
+			    </label>
+			    <label class="radio-inline">
+			      <input type="radio" name="product_size">XL
+			    </label>
+
+    </div>
+    <div class="form-group">
+      <label for="product_quantity">Quantity:</label>
+      <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" name="product_quantity">
+    </div>
+    <div class="form-group">
+      <label for="contact">Contact No:</label>
+      <input type="number" class="form-control" id="contact" placeholder="eg. 9867656789" name="contact">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Id:</label>
+      <input type="email" class="form-control" id="quantity" placeholder="abc@xyz.com" name="email">
+    </div>
+    <div class="form-group">
+      <label for="notes">Extra notes:</label>
+    <!--   <input type="text" class="form-control" id="notes" placeholder="Anything you would like to tell us about your preferences??" name="notes"> -->
+    <textarea class="form-control" rows="3" id="notes" name="notes" placeholder="Anything you would like to tell us about your preferences??"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="image">Or.. Input your own design:</label>
+      <input type="file" name="image">
+    </div>
+    
+    <button type="submit" name="submit" class="btn btn-default">Submit</button>
+  </form>
+  </div>
+
+  </div>
+  </div>
+
+		      	<!-- <form action="reqProduct/insert" method="post" onsubmit="return confirm('Are you sure you have got everything right?');">
+		      	<input type="hidden" name="product_name" value="tshirt" id="id">
+				<strong>Size:<br></strong>
+				<label class="radio-inline">
+			      <input type="radio" name="product_size">S
+			    </label>
+			    <label class="radio-inline">
+			      <input type="radio" name="product_size">M
+			    </label>
+			    <label class="radio-inline">
+			      <input type="radio" name="product_size">L
+			    </label>
+			    <label class="radio-inline">
+			      <input type="radio" name="product_size">XL
+			    </label>
+			    <br><br>
+				
+				<strong>Quantity:<br></strong>
+				<input type="text" name = "product_quantity" placeholder="Quantity"><br/><br/>
+				<strong>Total:<br></strong>
+				<input type="number" name = "total" placeholder="total"><br/><br/>
+				<strong>Contact No:<br></strong>
+				<input type="number" name = "contact" placeholder="contact no"><br/><br/>
+				<strong>Email id:<br/></strong>
+				<input type="email" name = "email" placeholder="email"><br/><br/>
+				<strong>Extra Notes:</strong>
+				<input type="text" name = "notes" placeholder="Anything you would like to tell us about your preferences??"><br/><br/>
+
+				<strong>Or... choose your own design:<br/></strong>
+				<input type="file" name = "image" ><br/>
+				<br/>
+				<input type = "submit" name ="submit">
+				</form> -->
+			    
+		      		      		       		   
 		    </div>
 		
 		  </div>
 		
 		</section>
     </div><!-- /container -->
+
+
+
+
+
+
     
 <!-- Footer ================================================== -->
       <footer class="footer">      
       	<div class="container">
+      	<div class="container" style='color:blue'>
+       © 2017 All Rights Reserved
+    </div>
 	        <p class="pull-right"><a href="#">Back to top</a></p>	        
 	      </div>       
     </footer>
@@ -342,6 +541,12 @@ function downloadFabric(canvas,name){
     dlLink.click();
     document.body.removeChild(dlLink);
 }*/
+
+     function multiply(){
+     var ans= (document.form.price.value)*(document.form.product_quantity.value)
+     document.form.total.value=ans;
+     }
+
  </script>
   </body>
 </html>
